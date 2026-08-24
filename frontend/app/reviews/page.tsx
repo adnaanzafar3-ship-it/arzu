@@ -1,0 +1,1 @@
+export default function Reviews(){return <div className="container py-12"><h1 className="text-4xl font-black">Student Reviews</h1><div className="card mt-8 max-w-3xl"><p className="text-slate-500">Reviews submitted by students should be moderated before publication. The backend model is prepared for this workflow.</p></div></div>}

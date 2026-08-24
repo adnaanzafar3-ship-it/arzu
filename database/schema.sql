@@ -1,0 +1,3 @@
+-- PostgreSQL production reference.
+-- The FastAPI SQLAlchemy models create the tables automatically for the MVP.
+-- For production, introduce Alembic migrations and run them through deployment.

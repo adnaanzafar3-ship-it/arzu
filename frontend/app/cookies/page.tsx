@@ -1,0 +1,1 @@
+export default function Cookies(){return <div className="container py-12 max-w-4xl"><div className="card"><h1 className="text-4xl font-black">Cookie Policy</h1><p className="mt-5 text-slate-600">This policy should be legally reviewed and updated to match the analytics and third-party services actually used by Padhaanewala.</p></div></div>}

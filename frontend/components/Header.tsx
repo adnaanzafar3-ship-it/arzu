@@ -1,0 +1,5 @@
+
+"use client";
+import Link from "next/link";import{useState}from"react";
+export default function Header(){const[open,setOpen]=useState(false);const links=[["Colleges","/colleges"],["AI Search","/ai-search"],["Courses","/courses"],["Predictor","/predictor"],["Scholarships","/scholarships"],["Mock Tests","/mock-tests"],["Exams","/exams"],["Blog","/blog"]];
+return <header className="bg-white/90 backdrop-blur border-b sticky top-0 z-50"><div className="container flex items-center justify-between py-4"><Link href="/" className="font-black text-2xl tracking-tight">padhaane<span className="text-violet-600">wala</span><span className="text-pink-500">.</span></Link><button className="md:hidden btn btn-primary" onClick={()=>setOpen(!open)}>☰</button><nav className={`${open?"flex":"hidden"} md:flex gap-4 items-center flex-wrap`}>{links.map(([l,u])=><Link key={u} href={u} className="text-sm font-bold hover:text-violet-600">{l}</Link>)}<Link href="/login" className="btn btn-primary">Login ↗</Link></nav></div></header>}
